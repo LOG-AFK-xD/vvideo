@@ -68,7 +68,7 @@ async def cbguides(_, query: CallbackQuery):
 
 💡 **If you have a follow-up questions about this bot, you can tell it on my support chat here: @{GROUP_SUPPORT}**
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+📢 __Powered by- [TheMafiaNetwork](t.me/TheMafiaNetwork)__""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbstart")]]
         ),
@@ -78,20 +78,21 @@ async def cbguides(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbcmds"))
 async def cbcmds(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""✨ **Hello [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**
+        f"""**Hello [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**
 
-» **press the button below to read the explanation and see the list of available commands !**
+📢**Press the button below to read the explanation and see The list of Available commands !**
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+📢 __Powered by- [TheMafiaNetwork](t.me/TheMafiaNetwork)__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("乂ᴀᴅᴍɪɴ ᴄᴍᴅ乂", callback_data="cbadmin"),
-                    InlineKeyboardButton("乂sᴜᴅᴏ ᴄᴍᴅ乂", callback_data="cbsudo"),
+                    InlineKeyboardButton("Admin Cmd", callback_data="cbadmin"),
+                    InlineKeyboardButton("Sudo Cmd", callback_data="cbsudo"),
                 ],[
-                    InlineKeyboardButton("乂ʙᴀsɪᴄ ᴄᴍᴅ乂", callback_data="cbbasic")
+                    InlineKeyboardButton("Basic Cmd", callback_data="cbbasic")
+                    InlineKeyboardButton("Basic Cmd", callback_data="cbhowtouse")
                 ],[
-                    InlineKeyboardButton("乂🔙ɢᴏ ʙᴀᴄᴋ乂", callback_data="cbstart")
+                    InlineKeyboardButton("🔙Go Back", callback_data="cbstart")
                 ],
             ]
         ),
@@ -101,7 +102,7 @@ async def cbcmds(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbbasic"))
 async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""🏮 here is the basic commands:
+        f"""🏮 Here is the basic commands:
 
 » /play (song name/link) - play music on video chat
 » /stream (query/link) - stream the yt live/radio live music
@@ -117,7 +118,7 @@ async def cbbasic(_, query: CallbackQuery):
 » /uptime - show the bot uptime status
 » /alive - show the bot alive info (in group)
 
-⚡️ __Powered by {BOT_NAME} AI__""",
+📢 __Powered by- [TheMafiaNetwork](t.me/TheMafiaNetwork)__""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
         ),
@@ -127,7 +128,7 @@ async def cbbasic(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbadmin"))
 async def cbadmin(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""🏮 here is the admin commands:
+        f"""🏮 Here is the admin commands:
 
 » /pause - pause the stream
 » /resume - resume the stream
@@ -139,7 +140,7 @@ async def cbadmin(_, query: CallbackQuery):
 » /userbotjoin - invite the userbot to join group
 » /userbotleave - order userbot to leave from group
 
-⚡️ __Powered by {BOT_NAME} AI__""",
+📢 __Powered by- [TheMafiaNetwork](t.me/TheMafiaNetwork)__""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
         ),
@@ -148,13 +149,13 @@ async def cbadmin(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbsudo"))
 async def cbsudo(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""🏮 here is the sudo commands:
+        f"""🏮 Here is the sudo commands:
 
 » /rmw - clean all raw files
 » /rmd - clean all downloaded files
 » /leaveall - order userbot to leave from all group
 
-⚡ __Powered by {BOT_NAME} AI__""",
+📢 __Powered by- [TheMafiaNetwork](t.me/TheMafiaNetwork)__""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
         ),
