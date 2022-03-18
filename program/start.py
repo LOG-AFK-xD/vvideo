@@ -52,7 +52,7 @@ async def _human_time_duration(seconds):
 )
 async def start_(client: Client, message: Message):   
     await message.reply_text(
-        f"""**Hello, My name is Official Musíc Bot.\n\nI'm a telegram streaming bot with some useful features. Supporting platforms like Youtube, Spotify, Resso, AppleMusic , Soundcloud etc.\n\nFeel free to add me to your groups.**
+        f"""**Hello, My name is Happy Musíc Bot.\n\nI'm a telegram streaming bot with some useful features. Supporting platforms like Youtube, Spotify, Resso, AppleMusic , Soundcloud etc.\n\nFeel free to add me to your groups.**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -63,24 +63,24 @@ async def start_(client: Client, message: Message):
                     )
                 ], 
                 [            
-                    InlineKeyboardButton("📨 Support", url=f"https://t.me/BLAZE_SUPPORT"),
-                    InlineKeyboardButton("📨 Channel", url=f"https://t.me/THE_BLAZE_NETWORK"),               
+                    InlineKeyboardButton("📨 Support", url=f"https://t.me/TheMafiaSupport"),
+                    InlineKeyboardButton("📨 Channel", url=f"https://t.me/TheMafiaNetwork"),               
                 ],
                 [
                     InlineKeyboardButton(
-                        "✚ Add me to your Group", url=f"https://t.me/LOG_AFK_OFFICIAL_BOT?startgroup=true"),
+                        "✚ Add me to your Group", url=f"https://t.me/Happy_ro_bot?startgroup=true"),
                 ],
                 [
                     InlineKeyboardButton(
                         "👤 Bot Owner", url=f"https://t.me/OFFICIAL_AFK_xD"
                     ),
                     InlineKeyboardButton(
-                        "💡 About me", url=f"https://t.me/iTzz_Official"                  
+                        "💡 About Me", url=f"https://t.me/iTzz_Official"                  
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "✳️ ChatZone ", url=f"https://t.me/UNIQUE_SOCIETY")
+                        "✳️ Chichat ", url=f"https://t.me/UNIQUE_SOCIETY")
 
               ],
             ]
