@@ -15,7 +15,7 @@ from config import (
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""**Hello, My name is Official Musíc Bot.\n\nI'm a telegram streaming bot with some useful features. Supporting platforms like Youtube, Spotify, Resso, AppleMusic , Soundcloud etc.\n\nFeel free to add me to your groups.**""",
+        f"""**Hello, My name is Happy Musíc Bot.\n\nI'm a telegram streaming bot with some useful features. Supporting platforms like Youtube, Spotify, Resso, AppleMusic , Soundcloud etc.\n\nFeel free to add me to your groups.**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -25,24 +25,24 @@ async def cbstart(_, query: CallbackQuery):
                     )
                 ], 
                 [            
-                    InlineKeyboardButton("📨 Support", url=f"https://t.me/BLAZE_SUPPORT"),
-                    InlineKeyboardButton("📨 Channel", url=f"https://t.me/THE_BLAZE_NETWORK"),               
+                    InlineKeyboardButton("📨 Support", url=f"https://t.me/TheMafiaSupport"),
+                    InlineKeyboardButton("📨 Channel", url=f"https://t.me/TheMafiaNetwork"),               
                 ],
                 [
                     InlineKeyboardButton(
-                        "✚ Add me to your Group", url=f"https://t.me/LOG_AFK_OFFICIAL_BOT?startgroup=true"),
+                        "✚ Add me to your Group", url=f"https://t.me/happy_ro_bot?startgroup=true"),
                 ],
                 [
                     InlineKeyboardButton(
                         "👤 Bot Owner", url=f"https://t.me/OFFICIAL_AFK_xD"
                     ),
                     InlineKeyboardButton(
-                        "💡 About me", url=f"https://t.me/iTzz_Official"                  
+                        "💡 About Me", url=f"https://t.me/iTzz_Official"                  
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "✳️ ChatZone ", url=f"https://t.me/UNIQUE_SOCIETY")                  
+                        "✳️ chitchat ", url=f"https://t.me/UNIQUE_SOCIETY")                  
                 ],
             ]
         ),
@@ -78,7 +78,7 @@ async def cbcmds(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""**Hello [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**
 
-📢**Press the button below to read the explanation and see The list of Available commands !**
+**Press the button below to read the explanation and see The list of Available commands !**
 
 📢 __Powered by- [TheMafiaNetwork](t.me/TheMafiaNetwork)__""",
         reply_markup=InlineKeyboardMarkup(
