@@ -52,9 +52,7 @@ async def _human_time_duration(seconds):
 )
 async def start_(client: Client, message: Message):   
     await message.reply_text(
-        f"""✨ **Hello, My name is Log Afk Official Bot.
-I'm a telegram streaming bot with some useful features. Supporting platforms like Youtube, Spotify, Resso, AppleMusic , Soundcloud etc.
-Feel free to add me to your groups.**
+        f"""**Hello, My name is Official Musíc Bot.\n\nI'm a telegram streaming bot with some useful features. Supporting platforms like Youtube, Spotify, Resso, AppleMusic , Soundcloud etc.\n\nFeel free to add me to your groups.**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -100,15 +98,15 @@ async def alive(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("乂ʙᴏᴛ ɢʀᴏᴜᴘ乂", url=f"https://t.me/Rockerz_updates"),
+                InlineKeyboardButton("📨 Support", url=f"https://t.me/TheMafiaSupport"),
                 InlineKeyboardButton(
-                    "乂ʙᴏᴛ ᴄʜᴀɴɴᴇʟ乂", url=f"https://t.me/Rockerz_Updates"
+                    "📨 Updates", url=f"https://t.me/TheMafiaNetwork"
                 ),
             ]
         ]
     )
 
-    alive = f"**Hello {message.from_user.mention()}, i'm {BOT_NAME}**\n\n✨ Bot is working normally\n🍀 My Master: [▁▂▄▅▆▇█ 𝕃𝕖𝕘𝕖𝕟𝕕◇𝕊𝕒𝕝𝕚𝕞 █▇▆▅▄▂▁](https://t.me/Xmartperson)\n✨ Bot Version: `v{__version__}`\n🍀 Pyrogram Version: `{pyrover}`\n✨ Python Version: `{__python_version__}`\n🍀 PyTgCalls version: `{pytover.__version__}`\n✨ Uptime Status: `{uptime}`\n\n**Thanks for Adding me here, for playing video & music on your Group video chat** ❤"
+    alive = f"**Hello {message.from_user.mention()}, I'm {BOT_NAME}**\n\n❣️ Bot is working normally\n🍀 My Master: [███─</Official ➣LOG⛦ AFK xͮD [🇮🇳] ─████](https://t.me/Official_afk_xD)\n✨ Bot Version: `v{__version__}`\n🍀 Pyrogram Version: `{pyrover}`\n✨ Python Version: `{__python_version__}`\n🍀 PyTgCalls version: `{pytover.__version__}`\n✨ Uptime Status: `{uptime}`\n\n**Thanks for Adding me here, for playing video & music on your Group video chat** ❤"
 
     await message.reply_photo(
         photo=f"{ALIVE_IMG}",
@@ -120,9 +118,9 @@ async def alive(client: Client, message: Message):
 @Client.on_message(command(["ping", f"ping@{BOT_USERNAME}"]) & ~filters.edited)
 async def ping_pong(client: Client, message: Message):
     start = time()
-    m_reply = await message.reply_text("ᴘɪɴɢɪɴɢ...")
+    m_reply = await message.reply_text("Pinging...")
     delta_ping = time() - start
-    await m_reply.edit_text("🏓 `ᴘᴏɴɢ!!`\n" f"⚡️ `{delta_ping * 1000:.3f} ms`")
+    await m_reply.edit_text("🏓 `Ping!!`\n" f"⚡️ `{delta_ping * 1000:.3f} ms`")
 
 
 @Client.on_message(command(["uptime", f"uptime@{BOT_USERNAME}"]) & ~filters.edited)
