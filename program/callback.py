@@ -89,8 +89,8 @@ async def cbcmds(_, query: CallbackQuery):
                     InlineKeyboardButton("Admin Cmd", callback_data="cbadmin"),
                     InlineKeyboardButton("Sudo Cmd", callback_data="cbsudo"),
                 ],[
-                    InlineKeyboardButton("Basic Cmd", callback_data="cbbasic")
-                    InlineKeyboardButton("Basic Cmd", callback_data="cbhowtouse")
+                    InlineKeyboardButton("Basic Cmd", callback_data="cbbasic"),
+                    InlineKeyboardButton("Basic Cmd", callback_data="cbhowtouse"),
                 ],[
                     InlineKeyboardButton("🔙Go Back", callback_data="cbstart")
                 ],
