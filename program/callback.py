@@ -15,9 +15,7 @@ from config import (
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""**Hello, My name is Log Afk Official Bot.
-I'm a telegram streaming bot with some useful features. Supporting platforms like Youtube, Spotify, Resso, AppleMusic , Soundcloud etc.
-Feel free to add me to your groups.**""",
+        f"""**Hello, My name is Official Musíc Bot.\n\nI'm a telegram streaming bot with some useful features. Supporting platforms like Youtube, Spotify, Resso, AppleMusic , Soundcloud etc.\n\nFeel free to add me to your groups.**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
