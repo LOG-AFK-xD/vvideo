@@ -50,8 +50,7 @@ async def _human_time_duration(seconds):
 @Client.on_message(
     command(["start", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited
 )
-async def start_(client: Client, message: Message):
-    await message.reply_sticker("CAACAgQAAxkBAAEECP1hoQ3WiZmIgZ1M6zpI4tagFYi5AQACcQsAArp60VE-Obmr9D4hkiIE")
+async def start_(client: Client, message: Message):   
     await message.reply_text(
         f"""✨ **Hello, My name is Log Afk Official Bot.
 I'm a telegram streaming bot with some useful features. Supporting platforms like Youtube, Spotify, Resso, AppleMusic , Soundcloud etc.
